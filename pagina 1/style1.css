@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+
+    width: 3100px;
+    height: 1200px;
+}
+
+/* Immagine */
+#img1 {
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img2 {
+    width: 250px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img3 {
+    width: 650px;
+    height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#img4 {
+    width: 450px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+/* Definizione Contenitori */
+
+.container {
+    width: 3000px;
+    /* background: linear-gradient(to right, rgba(19,145,29,1) 0%, rgba(240,201,25,1) 34%, rgba(246,41,14,1) 66%, rgb(192, 113, 10) 100%);    box-shadow: 0 2px 16px rgba(255, 255, 255, 0.1); */
+    background: rgb(250, 247, 247);
+    border-radius: 20px;
+
+    position: relative;
+    /* left: 50px; */
+    top: 35px;
+    margin: 0 35px 35px;
+    /* margin-top: 0px; */
+ 
+
+    /* Sbarra di scorrimento */
+    /* overflow-x: scroll; */
+}
+
+.tab_box{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tab_box .tab_btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background: none;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.content_box {
+    /* margin: 20px; */
+    padding: 0px 20px 20px 20px;
+
+    position: relative;
+    top: 20px;
+}
+
+.content {
+    display: none; /* Nasconde i contenuti per default */
+}
+
+.content.active {
+    display: block; /* Mostra il contenuto attivo */
+}
+
+.tab_btn.active {
+    font-weight: bold; /* Evidenzia il pulsante attivo */
+    background-color: rgba(151, 249, 52, 0.8); /* Colore di sfondo per distinguere */
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+/* TABELLA 1 */
+.ib {
+    display: inline;
+    margin-right: 1px; /* Spazio tra le scritte */
+  }
+
+/* TABELLA 2*/
+#table {
+    color: white;
+    border: 2px solid white;
+}
+
+button {
+    border: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    border-collapse: collapse;
+
+    vertical-align: middle;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+th,
+td {
+    padding: 15px;
+    width: 300px;
+}
+
+.value {
+    display: inline-block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    padding: 5px 10px;
+    /* Spazio interno per migliorare l'aspetto */
+    border: 1px solid #000;
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+}
+
+.total {
+    display: inline-block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    padding: 5px 10px;
+    /* Spazio interno per migliorare l'aspetto */
+    border: 2px solid #000;
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(247, 247, 91, 0.5);
+}
+
+.totaleg {
+    display: inline-block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    padding: 5px 10px;
+    /* Spazio interno per migliorare l'aspetto */
+    border: 2px solid #000;
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(247, 247, 91, 0.5);
+    color:rgba(247, 247, 91, 0.5);;
+
+    height: 20px;
+
+    position: relative;
+    left: 25px;
+    top: 5.5px;
+}
+
+.totaleg12 {
+    display: inline-block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    padding: 5px 10px;
+    /* Spazio interno per migliorare l'aspetto */
+    border: 2px solid #000;
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(147, 243, 52, 0.5);
+    color:rgba(147, 243, 52, 0.5);
+
+    height: 20px;
+
+    position: relative;
+    left: 25px;
+    top: 5.5px;
+}
+
+.totaleg2 {
+    display: inline-block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    /* padding: 10px; */
+    /* Spazio interno per migliorare l'aspetto */
+    /* border: 2px solid #000; */
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+    font-weight: bold;
+    /* background-color: rgba(247, 247, 91, 0.5); */
+    /* color:rgba(247, 247, 91, 0.5);; */
+
+    height: 20px;
+
+    position: relative;
+    left: 25px;
+    top: 2px;
+}
+
+.total_2 {
+    display: block;
+    /* Mantiene ogni valore numerico in linea */
+    margin: 5px;
+    /* Aggiunge spazio tra i valori */
+    padding: 5px 10px;
+    /* Spazio interno per migliorare l'aspetto */
+    border: 2px solid #000;
+    /* Bordi neri attorno ai valori */
+    border-radius: 4px;
+    /* Opzionale, per angoli leggermente arrotondati */
+
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(147, 243, 52, 0.5);
+}
+
+.line {
+    position: absolute;
+    top: 62px;
+    left: 17px;
+    width: 9px;
+    height: 5px;
+}
+
+caption{
+    caption-side: bottom;
+
+    margin: 25px;
+}
