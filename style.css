@@ -41,7 +41,6 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* Media Query per dispositivi con larghezza max 768px */
