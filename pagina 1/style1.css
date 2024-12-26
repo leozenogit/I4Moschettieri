@@ -283,3 +283,43 @@ caption{
 
     margin: 25px;
 }
+
+/* Media Query per dispositivi con larghezza max 768px */
+@media (max-width: 768px) {
+    #img1 {
+        width: 80%; /* Larghezza adattabile */
+        height: auto; /* Mantieni le proporzioni */
+    }
+
+    #img2 {
+        width: 60%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    #img3 {
+        width: 70%;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Media Query per dispositivi più piccoli (max 480px) */
+@media (max-width: 480px) {
+    #img1 {
+        width: 90%; /* Ancora più adattabile */
+        height: auto;
+    }
+
+    #img2 {
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #img3 {
+        width: 90%;
+        height: auto;
+        margin-top: 5px;
+    }
+}
