@@ -58,9 +58,10 @@ body {
     }
 
     #img3 {
-        width: 70%;
-        height: auto;
-        margin-top: 10px;
+        width: 80%; /* Adatta la larghezza per dispositivi più piccoli */
+        height: auto; /* Mantieni le proporzioni */
+        margin: 0 auto; /* Centra l'immagine orizzontalmente */
+        display: block; /* Assicura che sia un elemento a blocco */
     }
 }
 
@@ -78,8 +79,9 @@ body {
     }
 
     #img3 {
-        width: 90%;
+        width: 90%; /* Ancora più flessibile per smartphone */
         height: auto;
-        margin-top: 5px;
+        margin: 0 auto; /* Centra l'immagine orizzontalmente */
+        display: block;
     }
 }
